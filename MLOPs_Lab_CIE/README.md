@@ -109,12 +109,22 @@ python src/train.py
 {
   "experiment_name": "biomotion-injury-risk-score",
   "models": [
-    {"name": "Lasso", "mae": 3.4391, "rmse": 3.7354, "r2": 0.9304},
-    {"name": "GradientBoosting", "mae": 2.287, "rmse": 2.6447, "r2": 0.9651}
+    {
+      "name": "Lasso",
+      "mae": 3.242,
+      "rmse": 4.2128,
+      "r2": 0.9263
+    },
+    {
+      "name": "GradientBoosting",
+      "mae": 9.1544,
+      "rmse": 10.2404,
+      "r2": 0.5645
+    }
   ],
-  "best_model": "GradientBoosting",
+  "best_model": "Lasso",
   "best_metric_name": "rmse",
-  "best_metric_value": 2.6447
+  "best_metric_value": 4.2128
 }
 ```
 
@@ -184,7 +194,7 @@ Expected response:
 ```json
 {
   "status": "running",
-  "model": "GradientBoosting",
+  "model": "Lasso",
   "version": "1.0"
 }
 ```
@@ -211,7 +221,7 @@ Request body:
 Expected response:
 ```json
 {
-  "injury_risk_score": 44.9024
+  "injury_risk_score": 38.8038
 }
 ```
 
