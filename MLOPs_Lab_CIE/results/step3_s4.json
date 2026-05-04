@@ -1,0 +1,13 @@
+{
+  "heartbeat_endpoint": "/heartbeat",
+  "forecast_endpoint": "/forecast",
+  "port": 8888,
+  "model_name": "Lasso",
+  "test_input": {
+    "stride_length_cm": 108.6,
+    "ground_contact_ms": 252.1,
+    "hip_drop_degrees": 6.7,
+    "fatigue_index": 4.2
+  },
+  "prediction": 38.8038
+}

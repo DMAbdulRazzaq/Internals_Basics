@@ -1,0 +1,20 @@
+{
+  "experiment_name": "biomotion-injury-risk-score",
+  "models": [
+    {
+      "name": "Lasso",
+      "mae": 3.242,
+      "rmse": 4.2128,
+      "r2": 0.9263
+    },
+    {
+      "name": "GradientBoosting",
+      "mae": 9.1544,
+      "rmse": 10.2404,
+      "r2": 0.5645
+    }
+  ],
+  "best_model": "Lasso",
+  "best_metric_name": "rmse",
+  "best_metric_value": 4.2128
+}
